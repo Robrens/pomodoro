@@ -1,0 +1,14 @@
+section {
+    border: 1px solid black;
+
+}
+
+.tache .done .btn {
+    height: 5rem;
+    width: 5rem;
+    border: 1px solid black;
+}
+
+#new {
+    width: 100%;
+}
