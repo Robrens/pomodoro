@@ -1,16 +1,26 @@
 $(document).ready(function() {
      $("#Ciboulette").click(function(){
          var lol = $("#new").val();
-         $("#toDo").append("<li></li>");
-         $("section #toDo li:last-child").prepend(lol);
+         $("#sortable").append("<li></li>");
+         $("section #sortable li:last-child").prepend(lol);
          console.log(lol);
      });
 
      $("#work").click(function(){
-        $("#wait").append($("section #toDo li:first-child"))
+        $("#wait").append($("section #sortable li:first-child"))
      })
 
+     // if($(pomodoro == "00")){
+     //     $("#fait").append($("section #wait li:first-child"))
+     // };
 
+     $("#stop").click(function(){
+          $("#fait").append($("section #wait li:first-child"))
+     });
+     $( function() {
+    $( "#sortable" ).sortable();
+    $("#sortable").disableSelection();
+  } );
 
 });
 
