@@ -2,11 +2,13 @@ $(document).ready(function() {
      $("#Ciboulette").click(function(){
          var lol = $("#new").val();
          $("#toDo").append("<li></li>");
-         $("section ul li:last-child").prepend(lol);
+         $("section #toDo li:last-child").prepend(lol);
          console.log(lol);
      });
 
-
+     $("#work").click(function(){
+        $("#wait").append($("section #toDo li:first-child"))
+     })
 
 
 
@@ -51,7 +53,7 @@ resetVariables : function(mins, secs, started){
  this.fillerHeight = 0;
 },
 startWork: function() {
- this.resetVariables(25, 0, true);
+ this.resetVariables(1, 0, true);
 },
 startShortBreak : function(){
  this.resetVariables(5, 0, true);

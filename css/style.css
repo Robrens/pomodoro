@@ -78,3 +78,8 @@ section {
 #buttons button#stop{
   background : #f00;
 }
+
+
+.cache {
+    display: none;
+}
