@@ -16,7 +16,7 @@
                 <input type="text" name="" value="" placeholder="Nouvelle tâche" id="new">
             </div>
             <div class="col-3">
-                <button type="button" name="button">Ajouter</button>
+                <button type="button" name="button" id="Ciboulette">Ajouter</button>
             </div>
         </div>
         <div class="row">
@@ -24,27 +24,43 @@
                 <section class="titre">
                     <p>A faire</p>
                 </section>
-                <section class="tache"></section>
+                <section class="tache">
+                    <ul id="toDo">
+                    </ul>
+                </section>
             </div>
             <div class="col-4">
                 <section class="titre">
                     <p>En cours</p>
                 </section>
-                <section class="progress">
-                    <input type="text" name="" value="25:00" class="w-100">
-                </section>
-                <section class="btn">
-                    <button type="button" name="button">Début</button>
-                </section>
-                <section class="btn">
-                    <button type="button" name="button">Pause</button>
-                </section>
+                <div id="pomodoro-app">
+                    <div id="container">
+                        <div id="timer">
+                            <div id="time">
+                                <span id="minutes">25</span>
+                                <span id="colon">:</span>
+                                <span id="seconds">00</span>
+                            </div>
+                            <div id="filler"></div>
+                        </div>
+
+                        <div id="buttons">
+                            <button id="work">Work</button>
+                            <button id="shortBreak">Short Break</button>
+                            <button id="longBreak">Long Break</button>
+                            <button id="stop">Stop</button>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="col-4">
                 <section>
                     <p>Fait</p>
                 </section>
-                <section class="done"></section>
+                <section class="done">
+                    <ul>
+                    </ul>
+                </section>
             </div>
         </div>
     </div>
